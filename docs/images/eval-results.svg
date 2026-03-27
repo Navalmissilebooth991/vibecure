@@ -39,10 +39,10 @@
   <text x="40" y="208" fill="#e6edf3" font-size="14" font-weight="600">LLM Uncapped Costs</text>
   <text x="40" y="225" fill="#7d8590" font-size="10">max_tokens cap, input validation, auth, rate limit</text>
 
-  <!-- Without: 33% bar (estimate from first run) -->
+  <!-- Without: 20% bar -->
   <rect x="450" y="200" width="140" height="20" rx="4" fill="#161b22"/>
-  <rect x="450" y="200" width="46" height="20" rx="4" fill="rgba(239,68,68,0.3)"/>
-  <text x="520" y="214" text-anchor="middle" fill="#f85149" font-size="12" font-weight="700">33%</text>
+  <rect x="450" y="200" width="28" height="20" rx="4" fill="rgba(239,68,68,0.3)"/>
+  <text x="520" y="214" text-anchor="middle" fill="#f85149" font-size="12" font-weight="700">20%</text>
 
   <!-- With: 100% bar -->
   <rect x="630" y="200" width="140" height="20" rx="4" fill="#161b22"/>
