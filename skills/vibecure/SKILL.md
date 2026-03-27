@@ -425,12 +425,11 @@ These checks apply to endpoints that accept file uploads feeding per-minute-bill
 
 **PASS if** any of:
 - Audio duration is checked before API submission using a library (`music-metadata`, `ffprobe`, `get-audio-duration`, `audioprobe`) with a threshold comparison and rejection
-- File size limit is tight enough to implicitly cap duration — 5MB at 16kHz mono WAV ≈ 2.5 minutes, which is a reasonable implicit cap
 - Named constants like `MAX_DURATION`, `MAX_AUDIO_LENGTH`, `DURATION_LIMIT` with enforcement
 
 **FAIL if**: No duration check AND file size limit allows files >10MB (enough for long-duration audio at lower bitrates). File size alone is an imprecise proxy — a low-bitrate compressed audio file (opus, ogg) can be minutes long at just a few MB.
 
-**Note**: This check is lower severity than `no-file-size-limit` because file size limits provide a partial proxy for duration. If `no-file-size-limit` already PASSes with a tight limit (≤10MB), this check can PASS implicitly.
+**Note**: File size alone does not cap duration — low-bitrate compressed audio (opus, ogg) can be minutes long at just a few MB. Always add an explicit duration check using `music-metadata` or equivalent.
 
 ### 8c. File Type Validation
 
