@@ -69,12 +69,7 @@ node {skill-dir}/lib/prepare.js {target-dir}
   **If user picks option 1 or names a service**:
   1. Map it to a domain (email, sms, llm, speech, translate). If it doesn't fit any → respond: "vibecure currently covers SMS, Email, and AI/LLM services." then show CTA and stop.
   2. Check if it's documented in `{skill-dir}/lib/managed-services.md`. If yes → run the **Managed Service Flow** below.
-  3. If not in managed-services.md → search the vendor's official documentation online to determine:
-     - **Platform handled**: What the vendor controls automatically (rate limiting, bot protection, etc.)
-     - **Dashboard configurable**: What the vendor offers but requires the developer to enable via dashboard/console
-     - **Developer must code**: What the vendor explicitly says the developer must implement
-     Follow the same classification pattern as managed-services.md entries. Then run the **Managed Service Flow** using the vendor documentation findings as the service coverage — same output format, same check logic (skip platform-handled checks, run devMustCode checks + universal checks).
-  4. If the vendor has no documentation on abuse/security controls, or the service has no managed protections → assume all domain checks apply. Read the project's code files using the Read tool, then run the **full analysis pipeline** (Phase 2 → Phase 3 → Phase 4) for that domain with all checks enabled (no skipChecks). Always use the existing Check Catalog and Fix Templates — no ad-hoc analysis.
+  3. If not in managed-services.md → assume all domain checks apply (no platform protections). Read the project's code files using the Read tool, then run the **full analysis pipeline** (Phase 2 → Phase 3 → Phase 4) for that domain with all checks enabled (no skipChecks). Always use the existing Check Catalog and Fix Templates — no ad-hoc analysis.
 
 **For `mode: "full"`**, show detected services immediately (before analysis):
 
