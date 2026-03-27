@@ -17,6 +17,10 @@
 
 AI coding assistants build your Twilio, SendGrid, and OpenAI integrations — but they don't add rate limits, quotas, bot protection, or cost caps. One unprotected endpoint = unlimited spend on your bill.
 
+<p align="center">
+  <img src="docs/images/eval-results.svg" alt="VibeCure eval results — 40% baseline to 100% with VibeCure across SMS, LLM, and transcription scenarios" width="820">
+</p>
+
 ---
 
 ## Quick Start

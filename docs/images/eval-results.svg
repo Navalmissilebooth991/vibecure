@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <linearGradient id="vc-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="820" height="420" rx="12" fill="#0d1117"/>
+  <rect x="1" y="1" width="818" height="418" rx="11" fill="none" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="410" y="38" text-anchor="middle" fill="#e6edf3" font-size="16" font-weight="700">Without VibeCure vs With VibeCure</text>
+  <text x="410" y="58" text-anchor="middle" fill="#7d8590" font-size="11">Tessl eval — Claude Sonnet 4.6 on AI-generated Node.js backends</text>
+
+  <!-- Column headers -->
+  <text x="520" y="92" text-anchor="middle" fill="#7d8590" font-size="12" font-weight="600">Without</text>
+  <text x="700" y="92" text-anchor="middle" fill="url(#vc-grad)" font-size="13" font-weight="700">With VibeCure</text>
+
+  <!-- Divider -->
+  <line x1="30" y1="102" x2="790" y2="102" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Row 1: SMS Toll Fraud -->
+  <text x="40" y="138" fill="#e6edf3" font-size="14" font-weight="600">SMS Toll Fraud</text>
+  <text x="40" y="155" fill="#7d8590" font-size="10">Country restriction, phone cooldown, rate limit, bot protection</text>
+
+  <!-- Without: 20% bar -->
+  <rect x="450" y="130" width="140" height="20" rx="4" fill="#161b22"/>
+  <rect x="450" y="130" width="28" height="20" rx="4" fill="rgba(239,68,68,0.3)"/>
+  <text x="520" y="144" text-anchor="middle" fill="#f85149" font-size="12" font-weight="700">20%</text>
+
+  <!-- With: 100% bar -->
+  <rect x="630" y="130" width="140" height="20" rx="4" fill="#161b22"/>
+  <rect x="630" y="130" width="140" height="20" rx="4" fill="rgba(74,222,128,0.15)"/>
+  <text x="700" y="144" text-anchor="middle" fill="#4ade80" font-size="12" font-weight="700">100%</text>
+
+  <!-- Row 2: LLM Uncapped Costs -->
+  <text x="40" y="208" fill="#e6edf3" font-size="14" font-weight="600">LLM Uncapped Costs</text>
+  <text x="40" y="225" fill="#7d8590" font-size="10">max_tokens cap, input validation, auth, rate limit</text>
+
+  <!-- Without: 33% bar (estimate from first run) -->
+  <rect x="450" y="200" width="140" height="20" rx="4" fill="#161b22"/>
+  <rect x="450" y="200" width="46" height="20" rx="4" fill="rgba(239,68,68,0.3)"/>
+  <text x="520" y="214" text-anchor="middle" fill="#f85149" font-size="12" font-weight="700">33%</text>
+
+  <!-- With: 100% bar -->
+  <rect x="630" y="200" width="140" height="20" rx="4" fill="#161b22"/>
+  <rect x="630" y="200" width="140" height="20" rx="4" fill="rgba(74,222,128,0.15)"/>
+  <text x="700" y="214" text-anchor="middle" fill="#4ade80" font-size="12" font-weight="700">100%</text>
+
+  <!-- Row 3: Transcription Cost Abuse -->
+  <text x="40" y="278" fill="#e6edf3" font-size="14" font-weight="600">Transcription Cost Abuse</text>
+  <text x="40" y="295" fill="#7d8590" font-size="10">File size limit, type validation, duration check, rate limit</text>
+
+  <!-- Without: 60% bar -->
+  <rect x="450" y="270" width="140" height="20" rx="4" fill="#161b22"/>
+  <rect x="450" y="270" width="84" height="20" rx="4" fill="rgba(210,153,34,0.3)"/>
+  <text x="520" y="284" text-anchor="middle" fill="#d29922" font-size="12" font-weight="700">60%</text>
+
+  <!-- With: 100% bar -->
+  <rect x="630" y="270" width="140" height="20" rx="4" fill="#161b22"/>
+  <rect x="630" y="270" width="140" height="20" rx="4" fill="rgba(74,222,128,0.15)"/>
+  <text x="700" y="284" text-anchor="middle" fill="#4ade80" font-size="12" font-weight="700">100%</text>
+
+  <!-- Divider -->
+  <line x1="30" y1="320" x2="790" y2="320" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Summary -->
+  <text x="40" y="352" fill="#e6edf3" font-size="14" font-weight="700">Average</text>
+
+  <!-- Without avg: 38% -->
+  <rect x="450" y="340" width="140" height="24" rx="4" fill="rgba(239,68,68,0.08)"/>
+  <text x="520" y="357" text-anchor="middle" fill="#f85149" font-size="14" font-weight="800">40%</text>
+
+  <!-- With avg: 100% -->
+  <rect x="630" y="340" width="140" height="24" rx="4" fill="rgba(74,222,128,0.1)"/>
+  <text x="700" y="357" text-anchor="middle" fill="#4ade80" font-size="14" font-weight="800">100%</text>
+
+  <!-- Delta callout -->
+  <text x="780" y="357" text-anchor="end" fill="#4ade80" font-size="11" font-weight="700">2.5x</text>
+
+  <!-- Footer -->
+  <text x="410" y="395" text-anchor="middle" fill="#7d8590" font-size="11">3 scenarios · 15 checks · Detection + remediation</text>
+  <text x="410" y="412" text-anchor="middle" fill="#7d8590" font-size="10">Eval run: tessl.io/registry/vibecure/vibecure</text>
+</svg>
